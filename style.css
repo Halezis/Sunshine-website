@@ -141,12 +141,12 @@ nav a {
     display: block;
     font-size: 40px;
     cursor: pointer;
-    transform: translateX(1000%);
+    transform: translateX(800%);
     transition: 0.8s ease;
   }
 
   .nav-hamburger.active {
-    transform: translateX(30%);
+    transform: translateX(50%);
     transition: 0.8s ease;
   }
 
