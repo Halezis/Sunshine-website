@@ -151,7 +151,7 @@ nav a {
   }
 
   .nav-links {
-    display: flex;
+    display: none;
     transform: translateX(800px);
     transition: 0.8s ease;
   }
