@@ -122,9 +122,6 @@ nav a {
 }
 
 @media (max-width: 700px) {
-  body {
-    width: 100vw;
-  }
   nav {
     display: block;
     position: relative;
@@ -141,7 +138,7 @@ nav a {
     display: block;
     font-size: 40px;
     cursor: pointer;
-    transform: translateX(800%);
+    transform: translateX(1000%);
     transition: 0.8s ease;
   }
 
@@ -152,7 +149,7 @@ nav a {
 
   .nav-links {
     display: none;
-    transform: translateX(800px);
+    /* transform: translateX(800px); */
     transition: 0.8s ease;
   }
 
@@ -163,6 +160,7 @@ nav a {
     left: 25%;
     width: 75%;
     padding: 15px;
+    opacity: 1;
     transform: translateX(0);
     display: flex;
     flex-direction: column;
@@ -171,7 +169,7 @@ nav a {
     gap: 300px;
     border: solid 1px #fff;
     z-index: 100;
-    transition: 0.8s ease;
+    transition: opacity 0.8s ease;
   }
 
   .nav-links.active .nav-list {
@@ -194,5 +192,35 @@ nav a {
   .features img {
     width: 100%;
     height: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-hamburger {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    transform: translateX(700%);
+    transition: 0.8s ease;
+  }
+
+  .nav-hamburger.active {
+    transform: translateX(15%);
+    transition: 0.8s ease;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-hamburger {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    transform: translateX(650%);
+    transition: 0.8s ease;
+  }
+
+  .nav-hamburger.active {
+    transform: translateX(15%);
+    transition: 0.8s ease;
   }
 }
